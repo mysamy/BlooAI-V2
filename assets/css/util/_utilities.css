@@ -43,3 +43,11 @@
 .u-none {
   display: none;
 }
+.u-text-center {
+  text-align: center;
+}
+.item__list {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: start;
+}

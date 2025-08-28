@@ -29,6 +29,13 @@
 	gap: 45px;
 	
 }
+.question__list {
+	    padding-left: 40px; 
+	    
+}
+.question__list-item {
+	list-style: disc; 
+}
 @media (max-width: 1500px) {
 	
 }
