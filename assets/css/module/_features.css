@@ -1,0 +1,15 @@
+.feature {
+	color: var(--color-text-primary);
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-secondary);
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 10px 8px var(--color-shadow);
+	gap: 20px;
+	cursor: pointer;
+}
+

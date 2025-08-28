@@ -1,0 +1,53 @@
+/* GENERAL STYLES */
+html {
+	font-size: var(--base);
+	scroll-behavior: smooth;
+}
+body {
+	color: var(--color-text-secondary);
+	background-color: var(--color-grey);
+	font-family: var(--family);
+	font-size: var(--body);
+	font-weight: var(--weight-normal);
+	max-width: 100vw;
+	min-height: 100vh;
+	line-height: 1.5;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+section {
+	margin: 50px 0;
+}
+h1,
+h2,
+h3,
+h4 {
+	text-align: center;
+}
+h1 {
+	font-size: var(--h1-size);
+}
+h2 {
+	font-size: var(--h2-size);
+}
+h3 {
+	font-size: var(--h3-size);
+}
+h4 {
+	font-size: var(--h4-size);
+}
+@media (max-width: 769px) {
+	body {
+		padding: 0;
+	}	
+}
+@media (max-width: 425px) {
+	
+	section {
+		margin:0;
+	}
+	h2 {
+		font-size: var(--h3-size);
+	}
+}

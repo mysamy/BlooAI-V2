@@ -1,0 +1,37 @@
+.number {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 45px;
+	height:45px;
+	border-radius: 50%;
+	background: conic-gradient(var(--color-primary) 0deg 60deg,
+			var(--white) 140deg 220deg,
+			var(--color-primary) 300deg 360deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.number__circle {
+	width: 80%;
+	height: 80%;
+	background-color: var(--color-secondary);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.number__position { 
+	width: 100%;
+	height: 100%;
+	color: var(--color-text-primary);
+	font-weight: var(--weight-bold);
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center
+	
+}

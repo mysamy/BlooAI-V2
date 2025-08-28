@@ -1,0 +1,231 @@
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="assets/css/app.css" />
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+            <title>Document</title>
+            <script src="/carousel.js" async></script>
+      </head>
+      
+      <body>
+             <header class="header">
+                  
+                  <div class="header__logo">
+                        <a class="header__link" href="/"><img src="./assets/image/LOGOBLOODAI.png" alt="Accueil – logo de bloo AI" /></a>
+                  </div>
+                  <nav class="nav" aria-label="Navigation principale" role="navigation">
+                        <ul class="nav__list">
+                              <li><a href="#how">Fonctionnalités</a></li>
+                              <li><a href="#compliance">Conformité</a></li>
+                              <li><a href="#talk">Contacts</a></li>
+                              <li><a href="tarifs.html">Tarifs</a></li>
+                              <li><a class="link-audit" href="/app">Connexion</a></li>
+                        </ul>
+                  </nav>
+                  <!-- boutton burger pour mobile/tablette -->
+                  <button class="button-burger" aria-expanded="false" aria-controls="modal-nav" aria-label="Ouvrir le menu de navigation">
+                        Menu <i class="button-burger__icon fas fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                  <dialog id="modal-nav" class="modal-nav" role="dialog" aria-modal="true" aria-labelledby="modal-nav-title">
+                        <h2 id="modal-nav-title" class="u-visually-hidden">Menu de navigation</h2>
+                        <nav class="nav-mobile">
+                              <ul class="nav-mobile__list">
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="index.html">Accueil</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="#how">Fonctionnalités</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="#compliance">Conformité</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="#talk">Contacts</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="tarifs.html">Tarifs</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link link-audit" href="/app">Audit</a></li>
+                              </ul>
+                        </nav>
+                  </dialog>
+            </header>
+            <section class="price">
+                  <h2>Prix</h2>
+                  <div class="price__cards">
+                        <div class="card-price">
+                              <div class="card-price__notice">Gratuit</div>
+                              <div class="card-price__header">
+                              <h3 class="card-price__title">
+                                    FREE <br />
+                                    
+                              </h3>
+                              <p>0€</p>
+                              </div>
+                              <ul class="card__list">
+                                    <li class="card__item">Audit d'une page de votre site</li>
+                                    <li class="card__item">Rapport PDF</li>
+                                    <li class="card__item">1 audit par mois</li>
+                              </ul>
+                              <a class="card-price__button" href="/app">Commencer</a>
+                        </div>
+                        <div class="card-price">
+                              <h3 class="card-price__title">Déclaration de conformité</h3>
+                              <p class="card-price__cost">à partir de 499€</p>
+                              <ul class="card__list">
+                                    <li class="card__item">1 Audit complet (25 pages max)</li>
+                                    <li class="card__item">1 Déclaration d'accessibilité</li>
+                                    <li class="card__item">1 Schéma pluriannuel de mise en accessibilité</li>
+                                    <button class="card-price__button">Choisir ce plan</button>
+                              </ul>
+                        </div>
+                        <div class="card-price">
+                              <h3 class="card-price__title">Test d'utilisateur</h3>
+                              <p class="card-price__cost">Sur devis</p>
+                              <span class="u-underline-white">Solutions sur-mesure & Accompagnement</span>
+                              <ul class="card__list">
+                                    <li>Audit multi-sites</li>
+                                    <li>SLA & support 24/7</li>
+                                    <li>Formations incluses & plus sur demande</li>
+                              </ul>
+                              <button class="card-price__button">Contactez-nous</button>
+                        </div>
+                        <div class="card-price card-price--inactive">
+                              <div class="card-price__notice">Prochainement</div>
+                              <h3 class="card-price__title">Agent IA</h3>
+                              <p class="card-price__cost">99€/mois</p>
+                              <ul class="card__list">
+                                    <li>Un chatbot spécialisé dans la mise en accessibilité</li>
+                                    <li>Utilisation des données de l'audit pour un accompagnement personnalisé</li>
+                              </ul>
+                              <button class="card-price__button card-price__button--inactive">S'abonner</button>
+                        </div>
+                  </div>
+            </section>
+            <section class="position">
+                  <h2>Positionnement face aux concurrents actuels</h2>
+
+                  <!-- TABLEAU -->
+                  <div class="table-container">
+                        <table class="table">
+                              <thead class="table__head">
+                                    <tr class="table__row table__row--header">
+                                          <th class="table__cell table__cell--title-left" scope="col">Critère</th>
+                                          <th class="table__cell table__cell--title table__cell--logo" scope="col">
+                                                <div class="table__logo"><img src="./assets/image/LOGOBLOODAI.png" alt="Logo BloodAI" /></div>
+                                          </th>
+                                          <th class="table__cell table__cell--title" scope="col">Outils d’audit classiques (Wave,Axe,etc)</th>
+                                          <th class="table__cell table__cell--title" scope="col">Cabinet Accessibilité</th>
+                                          <th class="table__cell table__cell--title-right" scope="col">CMS / Plugins accessibilité</th>
+                                    </tr>
+                              </thead>
+                              <tbody class="table__body">
+                                    <tr class="table__row">
+                                          <th class="table__cell table__cell--row-header" scope="row">Audit automatisé</th>
+                                          <td class="table__cell table__cell--content">IA + Pédagogie</td>
+                                          <td class="table__cell table__cell--content">Brut et technique</td>
+                                          <td class="table__cell table__cell--content">Manuel uniquement</td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                          <th class="table__cell table__cell--row-header" scope="row">Déclaration + schéma officiel</th>
+                                          <td class="table__cell table__cell--content">Généré automatiquement</td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                          <td class="table__cell table__cell--content">Devis</td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                          <th class="table__cell table__cell--row-header" scope="row">Accompagnement IA personnalisé</th>
+                                          <td class="table__cell table__cell--content">Assistant conversationnel intégré</td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                          <th class="table__cell table__cell--row-header" scope="row">Tests avec utilisateurs handicapés</th>
+                                          <td class="table__cell table__cell--content">Option réelle via partenariat</td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                          <td class="table__cell table__cell--content">Coûteux</td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                          <th class="table__cell table__cell--row-header" scope="row">Intégration CMS & API dev</th>
+                                          <td class="table__cell table__cell--content">Prévus (Shopify, WP, Presta)</td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                          <td class="table__cell table__cell--content">
+                                                <img class="table__cross" src="assets/image/croix.png" alt="Non disponible" class="table__icon" />
+                                          </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                          <th class="table__cell table__cell--row-header-left" scope="row">Prix & rapidité</th>
+                                          <td class="table__cell table__cell--content">Ultra compétitif et immédiat</td>
+                                          <td class="table__cell table__cell--content">Gratuit mais incomplet</td>
+                                          <td class="table__cell table__cell--content">Lent et cher</td>
+                                          <td class="table__cell table__cell--content-right">Variable</td>
+                                    </tr>
+                              </tbody>
+                        </table>
+                  </div>
+            </section>
+
+            <footer class="footer">
+                  <div class="footer__top">
+                        <div class="footer__logo"><img src="assets/image/LOGOBLOODAI.png" alt="" /></div>
+                        <ul class="footer__list">
+                              <li class="footer__item"><a class="footer__link" href="">L'entreprise adaptée</a></li>
+                              <li class="footer__item"><a class="footer__link" href="">Tarifs</a></li>
+                        </ul>
+                  </div>
+                  <div class="footer__middle">
+                        <div class="footer__socials">
+                              <h3 class="footer__title">Socials</h3>
+                              <div class="footer__social-links">
+                                    <a class="footer__social-link" href="">Instagram <i class="fas fa-instagram"></i></a>
+                                    <a class="footer__social-link" href="">Youtube <i class="fas fa-check-circle"></i></a>
+                                    <a class="footer__social-link" href="">Twitter <i class="fas fa-check-circle"></i></a>
+                                    <a class="footer__social-link" href="">Likedin <i class="fas fa-youtube"></i></a>
+                              </div>
+                        </div>
+                        <div class="footer__company">
+                              <h3 class="footer__title">Entreprise</h3>
+                              <div class="footer__company-info">
+                                    <p><span class="footer__label">Email</span> : jmrez@jkre.com</p>
+                                    <p><span class="footer__label">Téléphone</span> : 0000000000</p>
+                                    <p><span class="footer__label">Adresse</span> : 11 Pl. des Victoires, 92600 Asnières-sur-Seine</p>
+                              </div>
+                        </div>
+                        <div class="footer__legal">
+                              <h3 class="footer__title">Legislations & Standards</h3>
+                              <div class="footer__legal-list">
+                                    <p class="footer__legal-text"><i class="fas fa-globe fa-2x"></i>Global Guidelines : WCAG</p>
+                                    <p class="footer__legal-text"><i class="fas fa-check-circle fa-2x"></i>Europe : EAA / EN301549</p>
+                                    <p class="footer__legal-text"><i class="fas fa-check-circle fa-2x"></i>Global Guidelines : WCAG</p>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="footer__bottom">
+                        <p>
+                              © <p id="date"></p>  BlooAI – une solution de Place des Victoires<a href="/mentions-legales.html">Mentions légales</a> /
+                              <a href="/accessibilite.html">Déclaration d’accessibilité</a> /
+                              <a href="/cgu.html">CGU</a>
+                        </p>
+                  </div>
+            </footer>
+            <script src="/accessibility.js"></script>
+            <script src="/app.js"></script>
+            <script src="/responsive.js"></script>
+      </body>
+</html>

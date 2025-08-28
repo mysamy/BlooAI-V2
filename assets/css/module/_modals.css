@@ -1,0 +1,13 @@
+.modal-nav {
+	z-index: 3;
+	position: absolute;
+	top: 100%;
+	height: 50vh;
+	width: 100vw;
+	background: var(--color-secondary);
+	justify-content: center;
+	align-items: center;
+	color: var(--color-text-primary);
+	border: none;
+	min-height: 350px;
+}

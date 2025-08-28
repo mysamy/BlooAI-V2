@@ -1,0 +1,20 @@
+.button-burger{
+	display: none;
+	justify-self: flex-start;
+	align-items: center;
+	background-color: var(--color-secondary);
+	border: none;
+	color: var(--color-text-primary);
+}
+@media (max-width: 450px) {
+	.talk__button {
+		width: 100%;
+		margin-top: 0;
+		padding: 0;
+	}
+}
+@media (max-width: 769px) {
+	.button-burger {	
+		display: flex;
+	}
+}

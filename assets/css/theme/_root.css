@@ -1,0 +1,86 @@
+/* VARIABLES */
+:root {
+    --base: 16px;
+    --h1-size: 3.0625rem;/* 49px */
+    --h2-size: 2.4375rem;/* 39px */
+    --h3-size: 1.9375rem;/* 31px */
+    --h4-size: 1.5625rem;/* 25px */
+    --body: 1.25rem;/* 20px */
+    --caption: 1rem;/* 16px */
+    --family: 'Luciole', sans-serif;
+    --weight-normal: 400;
+    --weight-bold: 700;
+    --style-normal: normal;
+    --style-italic: italic;
+    /* COLORS */
+    --white: #FFFFFF;
+    --black: #000000;
+    --color-primary: #3EE4F0;
+    --color-secondary: #1A2A3A;
+    --color-secondary-ligther: #163C62;
+    --color-secondary-ligth: #27394B;
+    --color-secondary-darker: #14202E;
+    --color-grey: #EBE9E9;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #000000;
+    --color-shadow: rgba(0, 0, 0, 0.463);
+    /* Couleurs des liens */
+    --color-link-hover: #4AAEB9;
+    --color-link-active:  #3EE4F0;
+    --color-link-focus: #3EE4F0;    
+    --color-button-active: #3EE4F0;
+    /* BORDERS */
+    --BORDERS: 1px solid var(--BORDER-COLOR);
+    /* STANDARD PADDING */
+    --PADDING-TOP: clamp(1rem, 5vh, 5rem);
+    --PADDING-SIDE: clamp(1rem, 15vw, 50rem);
+    --PADDING-SIDE2: clamp(1rem, 5vw, 50rem);
+
+   
+
+
+}
+
+/* ==================
+     POLICE LUCIOLE 
+   ================== */
+
+/* Regular */
+@font-face {
+  font-family: 'Luciole';
+  src: url('../../Fonts/Luciole-Regular/Luciole-Regular.woff2') format('woff2'),
+       url('../../Fonts/Luciole-Regular/Luciole-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Luciole';
+  src: url('../../Fonts/Luciole-Italic/Luciole-Italic.woff2') format('woff2'),
+       url('../../Fonts/Luciole-Italic/Luciole-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Luciole';
+  src: url('../../Fonts/Luciole-Bold/Luciole-Bold.woff2') format('woff2'),
+       url('../../Fonts/Luciole-Bold/Luciole-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Luciole';
+  src: url('../../Fonts/Luciole-BoldItalic/Luciole-BoldItalic.woff2') format('woff2'),
+       url('../../Fonts/Luciole-BoldItalic/Luciole-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

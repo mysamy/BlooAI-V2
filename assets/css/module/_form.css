@@ -1,0 +1,37 @@
+.form__button {
+	padding: 20px 35px;
+	font-size: var(--body);
+}
+.form__input {
+	height: 100%;
+	margin-right: 20px;
+	width: 400px;
+	border: none;
+	outline: none!important;
+	padding: 15px;
+	background-color: white!important;
+}
+.form__container {
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-color: white;
+	border-radius: 30px;
+	padding: 0px 15px 0px 15px;
+}
+.form__icon {
+	position: absolute;
+	top : 30%;
+	left: 10px;
+}
+
+.form__status {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+@media (max-width: 765px) {
+	.form__input {
+			width: 100%;
+		}
+}
