@@ -11,7 +11,7 @@
 }
 
 .u-green {
-  color: #146040;
+  color: var(--color-green);
 }
 
 .u-bold {

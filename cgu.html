@@ -1,0 +1,117 @@
+<html lang="fr">
+      <head>
+            <base href="/blooai/" />
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            
+
+            <link rel="stylesheet" href="./assets/css/app.css" />
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+            <title>Blooai</title>
+      </head>
+
+      <body>
+            <header class="header">
+                  <div class="header__logo">
+                        <a class="header__link" href="/"><img src="./assets/image/LOGOBLOODAI.png" alt="Accueil – logo de bloo AI" /></a>
+                  </div>
+                  <nav class="nav" aria-label="Navigation principale" role="navigation">
+                        <ul class="nav__list">
+                              <li><a href="#how">Fonctionnalités</a></li>
+                              <li><a href="#compliance">Conformité</a></li>
+                              <li><a href="#talk">Contacts</a></li>
+                              <li><a href="/tarifs.html">Tarifs</a></li>
+                              <li><a class="link-audit" href="/app">Connexion</a></li>
+                        </ul>
+                  </nav>
+                  <!-- boutton burger pour mobile/tablette -->
+                  <button class="button-burger" aria-expanded="false" aria-controls="modal-nav" aria-label="Ouvrir le menu de navigation">
+                        Menu <i class="button-burger__icon fas fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                  <dialog id="modal-nav" class="modal-nav" role="dialog" aria-modal="true" aria-labelledby="modal-nav-title">
+                        <h2 id="modal-nav-title" class="u-visually-hidden">Menu de navigation</h2>
+                        <nav class="nav-mobile">
+                              <ul class="nav-mobile__list">
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="index.html">Accueil</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="#how">Fonctionnalités</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="#compliance">Conformité</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="#talk">Contacts</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link" href="tarifs.html">Tarifs</a></li>
+                                    <li class="nav-mobile__item"><a class="nav-mobile__link link-audit" href="/app">Audit</a></li>
+                              </ul>
+                        </nav>
+                  </dialog>
+            </header>
+          
+             <footer class="footer" role="contentinfo">
+                  <div class="footer__top">
+                        <div class="footer__logo">
+                              <a href="/" aria-label="Page d'accueil Bloo AI">
+                                    <img src="./assets/image/LOGOBLOODAI.png" alt="Logo Bloo AI" />
+                              </a>
+                        </div>
+                  </div>
+                  <div class="footer__middle">
+                        <div class="footer__socials">
+                              <h3 class="footer__title">Réseaux sociaux</h3>
+                              <ul class="footer__social-links">
+                                    <li>
+                                          <a href="" aria-label="Instagram Bloo AI"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+                                    </li>
+                                    <li>
+                                          <a href="" aria-label="Chaîne YouTube Bloo AI"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a>
+                                    </li>
+                                    <li>
+                                          <a href="" aria-label="Compte Twitter Bloo AI"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
+                                    </li>
+                                    <li>
+                                          <a href="" aria-label="Profil LinkedIn Bloo AI"
+                                                ><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a
+                                          >
+                                    </li>
+                              </ul>
+                        </div>
+                        <div class="footer__company">
+                              <h3 class="footer__title"><a href="">Entreprise adaptée</a></h3>
+
+                              <address class="footer__company-info">
+                                    <p>
+                                          <span class="footer__label">Email</span> :
+                                          <a href="mailto:jmrez@jkre.com">jmrez@jkre.com</a>
+                                    </p>
+                                    <p>
+                                          <span class="footer__label">Téléphone</span> :
+                                          <a href="tel:0000000000">0000000000</a>
+                                    </p>
+                                    <p><span class="footer__label">Adresse</span> : 11 Pl. des Victoires, 92600 Asnières-sur-Seine</p>
+                              </address>
+                        </div>
+                        <div class="footer__legal">
+                              <h3 class="footer__title"><a href="">Conformité & Standards</a></h3>
+                              <ul class="footer__legal-list">
+                                    <li class="footer__legal-text">
+                                          <i class="fas fa-globe fa-2x" aria-hidden="true"></i>
+                                          <span>Global Guidelines : WCAG</span>
+                                    </li>
+                                    <li class="footer__legal-text">
+                                          <i class="fas fa-check-circle fa-2x" aria-hidden="true"></i>
+                                          <span>Europe : EAA / EN301549</span>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+                  <div class="footer__bottom">
+                        
+                        <p>
+                              © <p id="date"></p>  BlooAI – une solution de Place des Victoires<a href="/mentions-legales.html">Mentions légales</a> /
+                              <a href="/accessibilite.html">Déclaration d’accessibilité</a> /
+                              <a href="/cgu.html">CGU</a>
+                        </p> 
+                  </div>
+            </footer>
+           
+            <script src="./app.js"></script>
+            <script src="./responsive.js"></script>
+      </body>
+</html>

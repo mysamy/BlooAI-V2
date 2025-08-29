@@ -9,10 +9,12 @@ buttonQuestion.forEach((btn) => {
             if (!isOpen) {
                   answer.removeAttribute("hidden");
                   requestAnimationFrame(() => {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
                         answer.classList.add("question__text--active");
                   });
             } else {
                   answer.classList.remove("question__text--active");
+                  answer.style.maxHeight = null;
                   answer.addEventListener("transitionend", function handler() {
                         answer.setAttribute("hidden", "");
                         answer.removeEventListener("transitionend", handler);

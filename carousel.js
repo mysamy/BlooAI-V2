@@ -14,7 +14,7 @@ class Carousel {
        *  @param {boolean} [options.pagination=false]
        */
       constructor(element, options = {}) {
-            this.element = element;
+            this.element = element; 
             // method assign permet de mettre des valeurs par default si lutilisteur ne met rien
             this.options = Object.assign(
                   {},
@@ -65,6 +65,7 @@ class Carousel {
                   ];
                   this.gotoItem(this.offset, false);
             }
+            debugger
             this.items.forEach((item) => this.container.appendChild(item));
             this.onWindowResize();
             this.setStyle();
@@ -194,7 +195,9 @@ class Carousel {
        * @para (number) index
        *@param {boolean} [animation = true]
        */
+      
       gotoItem(index, animation = true) {
+            
             if (index < 0) {
                   if (this.options.loop) {
                         index = this.items.length - this.slidesVisible;
@@ -221,8 +224,8 @@ class Carousel {
 
             this.moveCallbacks.forEach((cb) => cb(index));
             this.zoom();
-            this.container.offsetHeight;
-            this.updateAccessibility(this.currentItem); // Force le navigateur à recalculer le layout (reflow) pour que les transitions/animations se déclenchent correctement
+            this.container.offsetHeight;// Force le navigateur à recalculer le layout (reflow) pour que les transitions/animations se déclenchent correctement
+            this.updateAccessibility(this.currentItem); 
             if (animation === false) {
                   this.items.forEach((item) => {
                         item.style.transition = "";
@@ -262,29 +265,17 @@ class Carousel {
             
             this.items.forEach((item, i) => {
                   const isActive = i === middleIndex;
-
-                  // Gérer le focus : si l'élément n'est pas actif mais contient le focus, on blur
-                  if (!isActive && item.contains(document.activeElement)) {
-                        document.activeElement.blur();
-                  }
-
-                  // Attributs d'accessibilité
                   item.setAttribute("aria-hidden", isActive ? "false" : "true");
                   item.setAttribute("tabindex", isActive ? "0" : "-1");
-
-                  // Pour l'élément actif (au milieu)
                   if (isActive) {
-                        item.setAttribute("aria-current", "true");
-
-                        // Focus seulement si aucun autre élément en dehors du carousel n'est focusé
-                        if (!this.root.contains(document.activeElement)) {
-                              item.focus();
-                        }
+                        item.setAttribute("aria-current", "true"); 
                   } else {
-                        item.removeAttribute("aria-current");
+                         item.removeAttribute("aria-current");
                   }
             });
-
+            if (this.root.contains(document.activeElement) || document.activeElement === document.body) {
+        this.items[middleIndex].focus();
+    }
             // Mise à jour du status live
             let status = document.getElementById("carousel-status");
             if (status) {
@@ -360,9 +351,11 @@ let onReady = function () {
 };
 
 if (document.readyState !== "loading") {
+     
       onReady();
 }
 document.addEventListener("DOMContentLoaded", onReady);
-document.addEventListener("focusin", (e) => {
-      console.log("Élément focusé :", e.target);
-});
+
+
+
+

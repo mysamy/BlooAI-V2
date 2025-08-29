@@ -52,6 +52,9 @@
 	.talk {
 		padding:20px;
 	}
+	.talk__form {
+		width: 100%;
+	}
 }
 @media (max-width: 376px) {
 

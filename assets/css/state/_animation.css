@@ -29,10 +29,9 @@
   color: white;
 }
 .question__text--active {
-    max-height: 300px;   
-    /* a changer */
+      
     opacity: 1;
-    transform: translateY(0);
+    
 }
 
 .question__icon {

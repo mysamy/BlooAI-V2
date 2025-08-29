@@ -24,16 +24,12 @@
 	flex-shrink: 0;
 	gap: 20px;
 }
-@media (max-width: 1700px) {
-	
-}
+
 @media (max-width: 1500px) {
 	.review__cards {
 		padding: 0;
+		gap: 5px;
 	}
-	
-}
-@media (max-width: 1200px) {
 	.review__cards {
 		flex-direction: column;
 		gap: 20px;
@@ -44,6 +40,7 @@
 		width: 100%;
 	}
 }
+
 @media (max-width: 769px) {
 	.review {
 		padding: 0 20px;

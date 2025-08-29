@@ -1,5 +1,6 @@
 function updatePlaceholder() {
       const input = document.getElementById("url");
+      if (!input) return;
       if (window.innerWidth <= 450) {
             input.placeholder = "URL";
       } else {

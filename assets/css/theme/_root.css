@@ -29,6 +29,7 @@
     --color-link-active:  #3EE4F0;
     --color-link-focus: #3EE4F0;    
     --color-button-active: #3EE4F0;
+    --color-green : #39d441;
     /* BORDERS */
     --BORDERS: 1px solid var(--BORDER-COLOR);
     /* STANDARD PADDING */

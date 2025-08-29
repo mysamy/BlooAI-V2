@@ -85,7 +85,7 @@
 	}
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
 	.hero {
 		padding: 20px;
 	}
@@ -95,6 +95,14 @@
 		grid-template-rows: 1fr 1fr;
 		gap: 20px;
 		place-items: center;
+	}
+	.hero__feature-description {
+		width: 100%;
+		flex-direction: column;
+		padding: 10px;
+		height: 100%;
+		gap: 0;
+		text-align: center;
 	}
 	.hero__container {
 		padding: 0;
