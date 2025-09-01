@@ -86,7 +86,10 @@
 		border-radius: 0;
 		padding: 20px 20px;
 		font-size: var(--caption);
-		
+	}
+	
+	.footer__bottom {
+		flex-wrap: wrap;
 	}
 	.footer__middle {
 		flex-wrap: wrap;

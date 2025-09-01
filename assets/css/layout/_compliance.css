@@ -72,11 +72,19 @@
 		margin: 10px;
 
 	}
-
+	.compliance__button--advantage {
+		border-radius: 0;
+	}
+	
 	.compliance__content {
 		padding: 20px 50px;
 	}
-
+	.compliance__content--advantage {
+		padding: 20px;
+	}
+	.compliance__buttons{
+		justify-content: center;
+	}
 	.compliance__grid {
 		margin: 0;
 		padding: 2rem 0;
@@ -88,7 +96,9 @@
 	.hero__compliance-title {
 		font-size: var(--caption);
 	}
-
+	.compliance__button {
+		width: 50%;
+	}
 	.compliance__container {
 		width: 100%;
 		margin: 0;
@@ -102,7 +112,7 @@
 	}
 
 	.compliance__content {
-		padding: 20px 5px;
+		
 		height: 100%;
 		border-radius: 0;
 	}

@@ -65,7 +65,7 @@ class Carousel {
                   ];
                   this.gotoItem(this.offset, false);
             }
-            debugger
+            
             this.items.forEach((item) => this.container.appendChild(item));
             this.onWindowResize();
             this.setStyle();
