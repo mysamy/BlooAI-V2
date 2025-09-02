@@ -1,38 +1,25 @@
-// utiliser nodemailer et mes identifiants mails pour menvoyer un mail a moi meme en le fesant sous la forme d'un fonction node.js
-// lidee etant est de taper la barre de saisie dans le terminal node nomdufichier
+let form = document.querySelector(".talk__form");
 
+form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const formData = new FormData(form); // contient toute les valeurs du formulaire
+      const data = Object.fromEntries(formData.entries()); // formData.entries() itérable de paires [clé, valeur].//Object.fromEntries(...) transforme cet itérable en un objet JavaScript classique.
 
-import nodemailer from "nodemailer"
-import 'dotenv/config'
-
-
-const envoyer = nodemailer.createTransport({
-	host: "smtp.office365.com",
-	port: 587,
-	secure:false,
-	auth: {
-		user: "benhamidasamy@hotmail.fr",
-		pass: process.env.MOTDEPASSE,
-	},
+      //    JSON.stringify(data) transforme l’objet en string JSON
+      localStorage.setItem("formData", JSON.stringify(data));
+      console.log("Données sauvegardées :", data);
+      //JSON.parse(texteJSON) → transforme ce texte JSON en objet JS à nouveau,
+      fetch("/", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(data),
+      })
+            .then((res) => res.json())
+            .then((res) => console.log("Réponse serveur :", res))
+            .catch((err) => console.error("Erreur :", err));
 });
+//.then(res => res.json())
+//fetch renvoie une promesse qui contient la réponse brute du serveur.
 
-
-	try {
-		const info = await envoyer.sendMail({
-		from: '"samy ben hamida" <benhamidasamy@hotmail.fr>',
-		to: "benhamidasamy@hotmail.fr", 
-		subject: "bonjour",
-		text:"test email",
-		html:"<b>testtt</b>",
-	})
-	console.log("message enovyer", info.messageId);
-	}
-	catch (err) {
-		   console.error("Erreur :", err);
-		   console.log('erreur');
-		   
-	    }
-	
-
-
-
+//res.json() transforme cette réponse JSON en objet JS utilisable.
+//fetch est une fonction intégrée en JS pour faire des requêtes HTTP (GET, POST, etc.) vers un serveur.
