@@ -46,8 +46,33 @@
 .u-text-center {
   text-align: center;
 }
-.item__list {
-  list-style: disc;
-  padding-left: 20px;
-  text-align: start;
+.u-inactive {
+  position: relative;
+
+}
+
+.u-inactive::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(45deg,
+			rgba(255, 255, 255, 0.2),
+			rgba(255, 255, 255, 0.2) 5px,
+			transparent 5px,
+			transparent 10px);
+  pointer-events: none; 
+}
+
+.u-lock::before {
+  content: "\f023"; 
+  font-family: "Font Awesome 6 Free"; 
+  font-weight: 900; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color:var(--black);
+  z-index: 1;
+  pointer-events: none;
 }

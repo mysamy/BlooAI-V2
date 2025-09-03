@@ -49,21 +49,6 @@
 	flex-direction: column;
 	gap: 10px;
 }
-
-.u-underline-white {
-	text-decoration: underline;
-	text-align: center;
-	font-size: var(--caption);
-}
-
-.card-price--inactive {
-	background-image: repeating-linear-gradient(45deg,
-			rgba(255, 255, 255, 0.2),
-			rgba(255, 255, 255, 0.2) 5px,
-			transparent 5px,
-			transparent 10px);
-}
-
 .card-price__button--inactive {
 	background-color: var(--color-grey);
 }
@@ -73,7 +58,7 @@
 		font-size: var(--caption);
 	}
 
-	
+
 }
 
 @media (max-width: 768px) {

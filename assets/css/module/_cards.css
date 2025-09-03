@@ -1,8 +1,9 @@
-
-
 .item__list {
 	display: flex;
 	flex-direction: column;
+	list-style: disc;
+  padding-left: 20px;
+  text-align: start;
 }
 .item__description {
 color: var(--color-text-primary);
@@ -14,9 +15,7 @@ color: var(--color-text-primary);
 }
 
 
-.span--colored {
-	color: var(--color-primary);
-}
+
 .item__img {
 	height: auto;
 }

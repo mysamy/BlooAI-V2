@@ -1,0 +1,12 @@
+.entreprise {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	padding: 0 var(--PADDING-SIDE) ;
+}
+@media (max-width: 1100px) {
+	.entreprise {
+		padding: 0 20px;
+	}
+	
+}
