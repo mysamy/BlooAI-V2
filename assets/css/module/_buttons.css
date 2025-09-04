@@ -6,6 +6,15 @@
 	border: none;
 	color: var(--color-text-primary);
 }
+
+.button--contact {
+	width: fit-content;
+	border-radius: 50px;
+	padding: 5px 45px;
+	font-weight: var(--weight-bold);
+	background-color: var(--color-primary);
+	border-color: var(--color-shadow);
+}
 @media (max-width: 450px) {
 	.talk__button {
 		width: 100%;

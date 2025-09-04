@@ -76,3 +76,9 @@
   z-index: 1;
   pointer-events: none;
 }
+/* Classe utilitaire pour rendre un élément inactif */
+.u-disabled {
+  pointer-events: none; 
+  opacity: 0.5;
+  cursor: not-allowed;
+}

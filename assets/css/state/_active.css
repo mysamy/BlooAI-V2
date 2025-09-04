@@ -4,7 +4,7 @@ a {
     color: var(--FONT-COLOR);
     text-decoration: underline;
     text-decoration-color: transparent;
-    transition: text-decoration-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition:  background-color 0.5s ease-in-out,text-decoration-color 0.5s ease-in-out, color 0.5s ease-in-out;
 
 }
 .link-audit {
@@ -13,17 +13,20 @@ a {
     font-weight: var(--weight-bold);
     border-radius: 30px;
     padding: 10px 30px;
+     border: 2px solid transparent;
 }
 .link-audit:hover,
-.nav-mobile__link :hover {
+.nav-mobile__link :hover,
+.button {
     color: var(--color-button-active);
-    text-decoration: none;
-    background-color: var(--black);
+    border: 2px solid;
+    background-color: var(--color-secondary);
+    text-decoration-color: var(--color-primary);
 
 }
 a:hover {
     color: var(--color-link-hover);
-    outline-offset: 3px;
+    outline-offset: 5px;
     text-decoration-color: var(--color-primary);
 }
 a:focus-visible,
@@ -31,13 +34,30 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
-.feature:focus {
-    outline: 2px solid var(--color-link-focus);
-    outline-offset: 3px;
+.feature:focus-visible
+{
+    outline: 5px solid var(--color-link-focus);
+    outline-offset: 5px;
+     position: relative;  
+    z-index: 10;      
+}
+.carousel__next:focus-visible,
+.carousel__prev:focus-visible {
+    outline: 5px solid var(--color-link-focus);
+    
+    z-index: 10;      
 
+}
+.carousel__item:focus-visible .item{
+outline: 10px solid var(--color-link-focus);
+position: relative;  
+    z-index: 10;   
+    
 }
 .header__link:focus-visible {
     display: inline-block;
+     position: relative;  
+    z-index: 10;      
 }
 
 .feature:focus {

@@ -25,8 +25,8 @@
     --color-text-secondary: #000000;
     --color-shadow: rgba(0, 0, 0, 0.463);
     /* Couleurs des liens */
-    --color-link-hover: #4AAEB9;
-    --color-link-active:  #3EE4F0;
+    --color-link-hover: #3EE4F0;
+    --color-link-active:  #4AAEB9;
     --color-link-focus: #3EE4F0;    
     --color-button-active: #3EE4F0;
     --color-green : #39d441;

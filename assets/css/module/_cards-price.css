@@ -33,14 +33,16 @@
 	padding: 10px 30px;
 	background-color: var(--color-primary);
 	color: var(--color-secondary);
-	border: 1px solid transparent
+	border: 2px solid transparent;
+	text-decoration: underline;
+	text-decoration-color: transparent;
 }
 
 .card-price__button:hover {
 	background-color: var(--color-secondary);
 	color: var(--color-primary);
-	border: 1px solid var(--color-primary);
-	text-decoration: none;
+	border: 2px solid var(--color-primary);
+	text-decoration-color: var(--color-primary);
 }
 
 .card__list {
@@ -48,9 +50,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-}
-.card-price__button--inactive {
-	background-color: var(--color-grey);
 }
 
 @media (max-width: 1100px) {

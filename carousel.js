@@ -14,7 +14,7 @@ class Carousel {
        *  @param {boolean} [options.pagination=false]
        */
       constructor(element, options = {}) {
-            this.element = element; 
+            this.element = element;
             // method assign permet de mettre des valeurs par default si lutilisteur ne met rien
             this.options = Object.assign(
                   {},
@@ -65,7 +65,7 @@ class Carousel {
                   ];
                   this.gotoItem(this.offset, false);
             }
-            
+
             this.items.forEach((item) => this.container.appendChild(item));
             this.onWindowResize();
             this.setStyle();
@@ -195,9 +195,8 @@ class Carousel {
        * @para (number) index
        *@param {boolean} [animation = true]
        */
-      
+
       gotoItem(index, animation = true) {
-            
             if (index < 0) {
                   if (this.options.loop) {
                         index = this.items.length - this.slidesVisible;
@@ -224,8 +223,8 @@ class Carousel {
 
             this.moveCallbacks.forEach((cb) => cb(index));
             this.zoom();
-            this.container.offsetHeight;// Force le navigateur à recalculer le layout (reflow) pour que les transitions/animations se déclenchent correctement
-            this.updateAccessibility(this.currentItem); 
+            this.container.offsetHeight; // Force le navigateur à recalculer le layout (reflow) pour que les transitions/animations se déclenchent correctement
+            this.updateAccessibility(this.currentItem, true);
             if (animation === false) {
                   this.items.forEach((item) => {
                         item.style.transition = "";
@@ -255,27 +254,31 @@ class Carousel {
        *
        * @param {number} index - L’index de la slide actuellement active.
        */
-      updateAccessibility(index) {
+      updateAccessibility(index, setFocus = false) {
             let middleIndex;
             if (this.slidesVisible >= 3) {
                   middleIndex = index + Math.floor(this.slidesVisible / 2);
             } else {
                   middleIndex = index;
             }
-            
+
             this.items.forEach((item, i) => {
                   const isActive = i === middleIndex;
                   item.setAttribute("aria-hidden", isActive ? "false" : "true");
                   item.setAttribute("tabindex", isActive ? "0" : "-1");
                   if (isActive) {
-                        item.setAttribute("aria-current", "true"); 
+                        item.setAttribute("aria-current", "true");
                   } else {
-                         item.removeAttribute("aria-current");
+                        item.removeAttribute("aria-current");
                   }
+                  const buttons = item.querySelectorAll("button, a");
+                  buttons.forEach((btn) => {
+                        btn.tabIndex = isActive ? 0 : -1;
+                  });
             });
-            if (this.root.contains(document.activeElement) || document.activeElement === document.body) {
-        this.items[middleIndex].focus();
-    }
+            if (setFocus && (document.activeElement === document.body || this.root.contains(document.activeElement))) {
+                  this.items[middleIndex].focus();
+            }
             // Mise à jour du status live
             let status = document.getElementById("carousel-status");
             if (status) {
@@ -351,11 +354,6 @@ let onReady = function () {
 };
 
 if (document.readyState !== "loading") {
-     
       onReady();
 }
 document.addEventListener("DOMContentLoaded", onReady);
-
-
-
-

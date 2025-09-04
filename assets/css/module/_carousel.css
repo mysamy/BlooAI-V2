@@ -32,16 +32,16 @@
 	background-repeat: no-repeat;
 	cursor: pointer;
 	top: 50%;
-	margin-top: -20px;
+	margin-top: -25px;
 	transition: opacity 0.3s;
 }
 .carousel__prev {
-	left: 0px;
+	left: 5px;
 	background-image: url("../../image/chevron-left-solid.svg");
 }
 
 .carousel__next {
-	right: 0px;
+	right: 5px;
 	background-image: url("../../image/chevron-right-solid.svg");
 }
 
