@@ -16,6 +16,7 @@
 
 .u-bold {
   font-weight: var(--weight-bold);
+  white-space: nowrap;
 }
 
 .u-underline {

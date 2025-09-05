@@ -1,11 +1,26 @@
 /* LINKS */
-
+li {
+    display: flex;
+    align-items: center;
+}
 a {
     color: var(--FONT-COLOR);
     text-decoration: underline;
     text-decoration-color: transparent;
-    transition:  background-color 0.5s ease-in-out,text-decoration-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out ,background-color 0.5s ease-in-out,text-decoration-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    display: inline-block;
+    
 
+    
+}
+a:active {
+    color: var(--color-link-active);
+    transform: scale(1.12);
+}
+a:hover {
+    color: var(--color-link-hover);
+    outline-offset: 5px;
+    text-decoration-color: var(--color-primary);
 }
 .link-audit {
     background-color: var(--color-primary);
@@ -24,11 +39,7 @@ a {
     text-decoration-color: var(--color-primary);
 
 }
-a:hover {
-    color: var(--color-link-hover);
-    outline-offset: 5px;
-    text-decoration-color: var(--color-primary);
-}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -63,10 +74,7 @@ position: relative;
 .feature:focus {
     border: 2px solid var(--white);
 }
-a:active {
-    color: var(--color-link-active);
-    transform: scale(0.98);
-}
+
 .question__text {
     max-height: 0;
     overflow: hidden;

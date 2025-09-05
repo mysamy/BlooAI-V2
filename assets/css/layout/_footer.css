@@ -33,6 +33,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	width: 30%;
 	
 }
 .footer__social-links{
@@ -54,12 +55,13 @@
 }
 .footer__label {
 	text-decoration: underline ;
+	
 }
 .footer__company {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: 35%;
+	width: 30%;
 }
 .footer__company-info {
 	display: flex;
@@ -70,6 +72,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	width:30%;
 }
 .footer__legal-list {
 	display: flex;
@@ -98,6 +101,14 @@
 	}
 	.footer__social-links{
 		gap: 5px;
+		
+	}
+	.footer__title {
+		font-size: var(--h4-size);
+	}
+	.footer__socials {
+		width: 40%;
+		align-items: center;
 	}
 	.footer__company-info {
 		gap:5px;
