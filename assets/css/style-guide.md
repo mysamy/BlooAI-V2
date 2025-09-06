@@ -49,6 +49,5 @@
 }
 
 
-<!-- autofocus -->
-<!-- 1 slide refresh -->
-<!-- focus sur carousel rend la invisible -->
+<!-- Changer le style de transition sur bouton et lien -->
+<!-- bouton sur item6 nas pas de focus -->

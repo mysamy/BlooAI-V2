@@ -54,12 +54,15 @@
 	gap: 20px;
 }
 .compliance__list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 	
-	margin: 0 auto;
-	
+	list-style-type: disc;
 }
 .compliance__list-item {
 	list-style: disc;
+	margin-left: 20px;
 }
 
 @media (max-width: 1100px) {
@@ -78,11 +81,9 @@
 	}
 	
 	.compliance__content {
-		padding: 20px 50px;
+		padding: 20px ;
 	}
-	.compliance__content--advantage {
-		padding: 20px;
-	}
+	
 	.compliance__buttons{
 		justify-content: center;
 	}
@@ -120,5 +121,11 @@
 
 	.compliance__button {
 		width: 100%;
+	}
+}
+@media (max-width: 325px) {
+
+	.compliance__button {
+		padding: 20px 10px;
 	}
 }

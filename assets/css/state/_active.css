@@ -1,7 +1,11 @@
 /* LINKS */
+
 li {
-    display: flex;
-    align-items: center;
+  display: grid;
+  align-items: center;
+  list-style-type: disc; 
+  list-style-position: inside; 
+  
 }
 a {
     color: var(--FONT-COLOR);

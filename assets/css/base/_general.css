@@ -16,6 +16,9 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+li {
+	list-style: none;
+}
 section {
 	margin: 50px 0;
 }
